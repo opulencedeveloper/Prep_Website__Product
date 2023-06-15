@@ -24,13 +24,13 @@ const commonUI = (
 const SectionOne = () => {
   return (
     <div className="relative -mt-1 flex flex-col px-5 pt-20 pb-16  bg-primary text-white md:pt-20 md:px-10 lg:flex-row">
-      <div className="absolute right-2 z-0 bottom-80">
-        <div className="bg-boxcolor2 h-[32px] w-[32px] ml-"></div>
+      <div className="absolute right-2 z-0 bottom-72 md:bottom-[27rem]">
+        <div className="bg-boxcolor2 h-[32px] w-[32px] "></div>
         <div className="bg-boxcolor1 h-[32px] w-[32px] -mt-4 ml-5"></div>
       </div>
 
       <div className="absolute bottom-10 left-0 md:bottom-24">
-        <div className="bg-boxcolor1 h-[56px] w-[40px] ml-"></div>
+        <div className="bg-boxcolor1 h-[56px] w-[40px] "></div>
         <div className="bg-boxcolor2 h-[48px] w-[48px] -mt-7 ml-5"></div>
       </div>
       <div className="w-full pt-auto space-y-8 px-auto pb-10 md:pt-24 lg:w-1/2 lg:px-7">
