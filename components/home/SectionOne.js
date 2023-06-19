@@ -1,12 +1,12 @@
 import Image from "next/image";
 
 const commonUI = (
-  <div className="absolute bottom-3 h-20 w-full">
-    <div className="mx-2 h-full bg-secondary1 space-y-2 py-2 px-1.5 rounded-xl">
-      <div className="h-3 bg-black bg-boxcolor3 rounded-md w-[90%]"></div>
-      <div className="h-3 bg-black bg-boxcolor3 rounded-md w-[60%]"></div>
-      <div className="flex justify-between h-5">
-        <div className="h-3 bg-black bg-boxcolor3 rounded-md w-[40%]"></div>
+  <div className="absolute bottom-3 h-[25%] w-full">
+    <div className="mx-2 h-full bg-secondary1 space-y-1.5 py-1.5 px-1.5 rounded-xl md:space-y-2 md:py-2">
+      <div className="h-[20%] bg-black bg-boxcolor3 rounded-md w-[90%]"></div>
+      <div className="h-[20%] bg-black bg-boxcolor3 rounded-md w-[60%]"></div>
+      <div className="relative flex justify-between h-[20%]">
+        <div className="h-full bg-black bg-boxcolor3 rounded-md w-[40%]"></div>
         <Image
           src="/images/group-image.svg"
           alt="group images"
@@ -14,7 +14,7 @@ const commonUI = (
           loading="eager"
           width={64}
           height={32}
-          className="h-auto w-auto"
+          className="h-4 w-auto absolute bottom-0 right-0 md:h-auto"
         />
       </div>
     </div>
