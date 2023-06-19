@@ -8,6 +8,9 @@ import handleWhatsAppClick from "@/helpers/whatsapp";
 export default function Home() {
   return (
     <>
+     <p
+        className='fixed top-0 right0 z-20'
+      >Site developed by opulencedeveloper</p>
     <Image
         src="/images/for-sale.png"
         alt="for sale"
