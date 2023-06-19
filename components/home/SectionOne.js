@@ -66,7 +66,7 @@ const SectionOne = () => {
       </div>
       <div className="relative w-full flex flex-col items-center pb-10 md:pb-auto lg:items-end lg:w-1/2">
         <div className="flex items-start space-x-8">
-          <div className="relative shadow-3xl">
+          <div className="relative h-full shadow-3xl">
             {commonUI}
             <Image
               src="/images/hero-image1.png"
@@ -120,7 +120,7 @@ const SectionOne = () => {
               className="h-auto w-auto pt-7"
             />
           </div>
-          <div className="relative shadow-4xl">
+          <div className="relative h-full shadow-4xl">
             {commonUI}
             <Image
               src="/images/hero-image4.png"
