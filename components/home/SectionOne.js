@@ -4,9 +4,9 @@ const commonUI = (
   <div className="absolute bottom-3 h-[25%] w-full">
     <div className="mx-2 h-full bg-secondary1 space-y-1.5 py-1.5 px-1.5 rounded-xl md:space-y-2 md:py-2">
       <div className="h-[20%] bg-black bg-boxcolor3 rounded-md w-[90%]"></div>
-      <div className="h-[20%] bg-black bg-boxcolor3 rounded-md w-[60%]"></div>
+      <div className="h-[20%] bg-black bg-boxcolor3 rounded-md w-[50%]"></div>
       <div className="relative flex justify-between h-[20%]">
-        <div className="h-full bg-black bg-boxcolor3 rounded-md w-[40%]"></div>
+        <div className="h-full bg-black bg-boxcolor3 rounded-md w-[30%]"></div>
         <Image
           src="/images/group-image.svg"
           alt="group images"
