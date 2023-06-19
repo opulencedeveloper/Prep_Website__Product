@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-//import Portal from "../UI/Portal";
-//import MobileNavigation from "./MobileNavigation";
-//import handleWhatsAppClick from "@/helpers/whatsapp";
+import Portal from "../UI/Portal";
+import MobileNavigation from "./MobileNavigation";
+import handleWhatsAppClick from "@/helpers/whatsapp";
 
 const linkContent = [
   { title: "Home", link: "/" },
@@ -36,16 +36,16 @@ const MainNavigation = () => {
   };
 
   return (
-    <nav className="w-full flex items-center bg-primary justify-between pt-auto py-4 px-5 md:px-10 md:pt-10">
-      {/* <Portal>
+    <nav className="w-full sticky top-0 z-40 flex items-center bg-primary justify-between pt-auto py-4 px-5 md:px-10 md:pt-10">
+      <Portal isOpen={isOpen} onClick={toggleDrawer}>
         <div
-          className={`fixed inset-y-0 -left-64 z-50 shadow-lg lg:hidden transform  ${
+          className={`fixed inset-y-0 z-50 -left-72 shadow-lg lg:hidden transform  ${
             isOpen ? "translate-x-full" : "translate-x-0"
           } transition-transform duration-300 ease-in-out`}
         >
           <MobileNavigation />
         </div>
-      </Portal> */}
+      </Portal>
       <Image
         src="/images/logo/logo.svg"
         priority
@@ -61,7 +61,7 @@ const MainNavigation = () => {
           {linkContent.map((content, index) => {
            const activeStyle = activeLink === content.link ? "border-b-2 border-secondary " : "text-textcolor";
             return <Link
-              //onClick={handleWhatsAppClick}
+              onClick={handleWhatsAppClick}
               key={index}
               className={`${activeStyle} py-2 px-1`}
               href={content.link}
@@ -72,7 +72,7 @@ const MainNavigation = () => {
         </div>{" "}
         {" "}
         <Link
-          //  onClick={handleWhatsAppClick}
+           onClick={handleWhatsAppClick}
           href={""}
           className="px-5 py-3 text-secondary border border-1 border-secondary rounded-md"
         >
